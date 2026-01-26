@@ -1,0 +1,19 @@
+# Project: Password Manager
+
+## Goals of the Project
+
+* Learning Node JS and Postgres Operations
+* DB CRUD operations via Node JS
+
+## Sources Table
+
+| SID | How it helped?            | Link to the Source                                                                                      | Remarks                                                                                                                                                                                                                                                                   |
+|-----|---------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | Connecting and Querying DB | [NorthFlank - Connecting to Postgres](https://northflank.com/guides/connecting-to-a-postgresql-database-using-node-js) |                                                                                                                                                                                                                                                                           |
+| 2   | Reset my password for DB  | [PostgreSQL Default Password Guide](https://phoenixnap.com/kb/postgresql-default-password)                | * Go to `C:\Program Files\PostgreSQL\17\data\pg_hba.conf`
+* Change `scram-sha-256` to `trust`
+* Windows -> Services -> Restart PostgreSQL
+* Run: `ALTER USER postgres PASSWORD 'new_secure_password';` (Result should be `ALTER ROLE`) |
+| 3   | Getting input from User   | [Getting User Input in Node.js](https://stackoverflow.com/questions/61394928/get-user-input-through-node-js-console) | I discovered `prompt-sync` and gained understanding of `async`, `await`, and `Promise`.                                                                                                                                                                                  |
+| 4   | Adding `type: "module"`   | [DevCommunity](https://dev.to/caspergeek/how-to-use-require-in-ecmascript-modules-1l42)                   | Helped overcome the error: `"ReferenceError: require is not defined in ES module"`.                                                                                                                                                                                      |
+| 5   | Markdown guide            | [Markdown Guide](https://dev.to/caspergeek/how-to-use-require-in-ecmascript-modules-1l42)                 |                                                                                                                                                                                                                                                                           |

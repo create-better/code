@@ -13,9 +13,9 @@ const { Table } = require("console-table-printer");
     table.rows.forEach((row) => {
         tableToPrint.addRow(row)
     })
-    const operation = prompt("a - Add Row\ns - Update a value in a row\nd - Delete an Entry\n\nWhat operation you want to perform? (a/s/d):  ");
+    const operation = prompt("c - Create Entry\ns - Update a value in a row\nd - Delete an Entry\nr - Show Entries\n\nWhat operation you want to perform? (c/s/d/r):  ");
     switch(operation){
-        case "a":
+        case "c":
             tableToPrint.printTable()
             const username = prompt("Username: ");
             const email = prompt("Email: ");
@@ -94,11 +94,17 @@ const { Table } = require("console-table-printer");
                 
             }
             break;
+
         case 'd':
             tableToPrint.printTable()
             const rowId = prompt("Delete row id: ")
             const deleteQuery = await client.query(`DELETE FROM passwords WHERE id = ${rowId}`);
             console.log(deleteQuery);
+            await client.end();
+            break;
+
+        case 'r':
+            tableToPrint.printTable();
             await client.end();
             break;
 

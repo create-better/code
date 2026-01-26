@@ -11,7 +11,7 @@ const Client = someModule.Client;
 */
 require('dotenv').config();
 
-(async () => {
+module.exports.getClient = async () => {
     const client = new Client({
         host: process.env.PG_HOST,
         port: process.env.PG_PORT,
@@ -21,8 +21,6 @@ require('dotenv').config();
         ssl: false
     });
     await client.connect();
-    const rest = await client.query('SELECT $1::text as connected', ['Connection to postgres is successful!']);
-    console.log(rest.rows[0]);
-    await client.end();
-})();
+    return client;
+};
 

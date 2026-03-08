@@ -1,0 +1,18 @@
+{
+  "categories": [
+    "fruits",
+    "numbers"
+  ],
+  "fruits": {
+    "banana": "바나나",
+    "apple": "사과",
+    "pear": "배",
+    "kiwi": "키위",
+    "watermelon": "수박",
+    "coconut": "코코넛"
+  },
+  "numbers": {
+    "one": "하나",
+    "two": "둘"
+  }
+}

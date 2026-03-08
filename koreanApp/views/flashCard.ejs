@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <style>
+            .category{
+                top: 0;
+                right: 0;
+                position: fixed;
+                margin-right: 20px;
+                margin-top: 20px;
+            }
+
+            .categoryOptions{
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Flash cards</h2>
+        <div class = 'category'>
+            <h3>Category</h3>
+            <select class = 'categoryOptions'>
+                <% categories.forEach(function(category) { %>
+                    <option value="<%= category %>"><%= category %></option>
+                <% }); %>
+            </select>
+
+            <ul class = "wordList">
+
+            </ul>
+        </div>
+    </body>
+</html>

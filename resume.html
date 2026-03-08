@@ -7,8 +7,8 @@
             
             body{
                 font-family: Arial, Helvetica, sans-serif;
-                font-size:8px;
-                margin: 5px;
+                font-size:5px;
+                margin: 2px;
             }
             h1{
                 font-size:30px;
@@ -31,41 +31,48 @@
             }
 
             .right{
-                flex: 60%;
+                flex: 68%;
+            }
+
+            .hlist{
+                display: flex;
+                flex-wrap: wrap;   /* remove if you want strictly one line */
+                gap: 12px;
+                list-style: none;
+                justify-content: center;
+                padding: 0;
+                margin: 0;
+                }
+
+            .hlist > li{
+            margin: 0;
             }
 
         </style>
     </head>
     <body>
         <h1>Dhanya B</h1>
+        <ul class = "hlist">
+            <li>dhanyababu2003@gmail.com</li>
+            <li>https://www.linkedin.com/in/dhanya-b-ab7a4b200</li>
+            <li>+91-9344959395</li>
+        </ul>
         <div class = "container">
             <div class = "left">
                 <div style = "padding-top: 10px;">
                     <!--Summary-->
-                    <h2>ABOUT ME</h2><hr>
-                    Strong communicator with excellent command of English and a solid technical foundation in Python, Groovy and Data Analytics. Adept at building automation, writing efficient scripts and explaining complex technical ideas clearly to both technical and non-technical stakeholders.
+                    <h2>PROFESSIONAL SUMMARY</h2><hr>
+                    Experienced in API development and product integrations, with strong skills in Python, Groovy, Node.js, and data analytics. Adept at building automation, writing efficient scripts, and explaining complex technical ideas clearly to both technical and non-technical stakeholders.
                 </div>
-                <div>
-                    <h2>CONTACT DETAILS</h2><hr>
-                    <ul>
-                        <li>dhanyababu2003@gmail.com</li>
-                        <li>https://www.linkedin.com/in/dhanya-b-ab7a4b200</li>
-                        <li>https://github.com/create-better</li>
-                    </ul>  
-                </div>
-
                 <div>
                     <!--Skills-->
                     <h2>SKILLS</h2><hr>
                     <h3>Technical Skills</h3>
                     <ul>
-                        <li>Python</li>
-                        <li>Groovy</li>
-                        <li>Postgres</li>
-                        <li>ML &DL: sklearn, pandas, numpy, tensorflow</li>
-                        <li>SQL: Postgresql</li>
-                        <li>Kotlin</li>
-                        <li>Flask</li>
+                        <li><b>Languages:</b> Python, Groovy, Node JS, Linux, ELK Cluster</li>
+                        <li><b>Databases & Tools:</b> PostgresSQL, Snowflake, VSCode, PgAdmin, Postman</li>
+                        <li><b>API Development:</b> REST API, Enterprise Application Integration, API Integration, Async progamming</li>
+                        <li><b>AWS:</b> AWS Lambda, EC2</li>
                     </ul>
                     <h3>Languages Known</h3>
                     <ul>
@@ -99,43 +106,38 @@
                     <!--Work Experience-->
                     <h2 style = "padding-top: 10px;">WORK EXPERIENCE</h2>
                     <hr>
-                    <b>Jira Administrator | Software Development Engineer - Zscaler</b><br>
+                    <b>Software Development Engineer - Zscaler</b><br>
                     <i>Fulltime - September, 2024 - Present, Bangalore, India. </i><br>
-                    <ul>
-                        <li>Worked with customers to build automations and workflows that helps improving day to day tasks.</li>
-                        <li>Completed over 600 Jira requests from customers.</li>
-                        <li>Key Tasks I worked on: <br>
-                            <b>Engineering Cockpit:</b><br>
-                            Creating custom Rest Endpoints in Jira to pull customised data. The APIs involved the usage of Threads that is capabale of over 1000 records in under 7 seconds.<br>
-                            <b>Structure Plugin Adaptation:</b><br>
-                            Helped Organise a Structure to present to the excecutives. Consisted of custom forumulas to track historical value with requested UI customisations.<br>
-                            <b>Development of Extensive Jira Course:</b><br>
-                            Created Video and Text documents to help new Jira users, project leads and admins to understand the product.
-                        </li>
-                    </ul>
-                    Skills Acquired: Groovy, SQL, Python   <br><br>
+                    <p style = "margin-top: 10px;">
+                        I work on managing Atlassian Products like Jira DC and Confluence DC. Developing integrations between atlassian products and other platforms. Additionally, I handle requests from internal teams to create and improve automations and workflows for projects.</p>
+                        <b>Key Tasks I worked on:</b> <br>
+                        <ul style="list-style: none;">
+                            <li><b>Engineering Cockpit:</b>
+                            Creating custom Rest Endpoints in Jira to pull customised data. The APIs involved the usage of Threads that is capabale of over 1000 records in under 7 seconds.<br></li>
+                            <li><b>Slack Jira Integration:</b>
+                            This Node JS based feature provides the users to create Jira tickets for any project and issue type via slack. Improved the productivity by 40%.<br>
+                            <li><b>Snowflake Jira Integration:</b>
+                            Real-time data updates to Snowflake improve credibility by accurately identifying active/inactive Jira discrepancies for executive reporting. <br></li>
+                        </ul>
+
+                    <i>Skills Acquired:</i> Python, Groovy, SQL, Node JS, AWS Lambda, Linux  <br><br>
 
                     <b>SRE Intern - Zscaler</b><br>
                     <i>Internship: March, 2024 - September, 2024, Bangalore, India.</i><br>
-                    <ul>
-                        <li>Worked on Linux and Virtual Machine related operations.</li>
-                        <li>Trained to understand and analyse logs from various systems and visualise the data in various platforms like Grafana and ELK cluster</li>
-                    </ul>
-                    Skills Acquired: Linux, Data Analytics, Grafana, Ansible <br><br>
+                
+                    <p >Worked on Linux and Virtual Machine related operations. Trained to understand and analyse logs from various systems and visualise the data in various platforms like Grafana and ELK cluster</p>
+                    <i>Skills Acquired:</i> Linux, Data Analytics, Grafana <br><br>
 
                     <b>Project Intern - HID</b><br>
                     <i>Internship: July, 2023 - March, 2024, Chennai, India.</i><br>
-                    <ul>
-                        <li>The primary focus was to build Deep Learning models that can be used inside in mobiles.</li>
-                        <li>The project included to understand and analyse the gryroscope, accelerator data of mobile devices and label the motion made by user.</li>
-                        <li>Key tasks included: Data collection, Data cleaning, Data Visualising, Handling Overfitting and Underfitting of Data, Analysing various models. </li>
-                    </ul>
-                    Skills Acquired: Kotlin, Python, Data Cleaning, Data Analytics, ML & DL <br><br>
+                    <p >Built and integratied DL models that can be utilised in mobile apps.The project included to understand and analyse the gryroscope, accelerator data of mobile devices and label the motion made by user. The key tasks included data analysis, native android app development, analysing various models.</p>
+                   
+                    <i>Skills Acquired:</i> Kotlin, Python, Data Cleaning, Data Analytics, ML & DL <br><br>
 
                     <b>TEDx Content Team Lead - Chennai Institute of Technology</b><br>
                     <i>Event Voluteer: March, 2021 - May, 2021 & Jan, 2022 - May, 2022, Chennai, India.</i><br>
-                    <p>The tasks included writing different types of content for website, sponsors, speakers, leadership, management and audience with varying requirements and interests in mind. As the head of the team, I also gained the opportunity to lead and collaborate with other students and professors to provide the best outcome.</p>
-                    Soft Skills Acquired: Leadership, Teamwork, Management Skills <br>
+                    <p>Created tailored content for multiple stakeholders—website, sponsors, speakers, leadership, management, and audience—adapting to varied requirements and interests. As team lead, coordinated and collaborated with students and professors to deliver the best outcomes.</p>
+                    <i>Skills Acquired:</i>: Leadership, Teamwork, Management Skills <br>
                 </div>
 
                 
